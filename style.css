@@ -1,0 +1,64 @@
+/*Style Sheet for Dog Adoption Page*/
+
+body {
+    margin: auto;
+}
+.header {
+    background-color: #004175;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    font-size: 1.2rem;
+}
+
+h1 {
+    margin-left: 50px;
+    font-family: Open Sans;
+}
+
+.header2, .row1, .row2, .row3 {
+    padding-left: 50px;
+    padding-right: 20px;
+    font-family: Open Sans;
+}
+.qualities {
+    display: inline;
+}
+
+.row1, .row2, .row3 {
+    display: inline-block;
+}
+
+.row1 div, .row2 div, .row3 div {
+    display: inline-block;
+    width: 28%;
+    float: left;
+}
+
+div.second-col, div.third-col {
+    padding-left: 10px;
+}
+
+.row1, .row2 {
+    padding-bottom: 30px;
+}
+
+img {
+    width: 100%;
+    float: left;
+    padding-bottom: 5px;
+}
+
+.qualities {
+    background-color: #89DEEF;
+    border-radius: 8px;
+    font-size: .8rem;
+    padding: 2px;
+    font-family: Open Sans;
+
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin: auto;
+    font-family: Oswald;
+}
