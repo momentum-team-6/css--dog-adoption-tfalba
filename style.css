@@ -2,39 +2,41 @@
 
 body {
     margin: auto;
+    font-family: 'Open Sans', sans-serif;
 }
 .header {
     background-color: #004175;
     color: white;
-    padding: 10px 0px 10px 0px;
+    padding: 30px 0px 30px 0px;
     font-size: 1.2rem;
 }
 
 h1 {
-    margin-left: 50px;
-    font-family: Open Sans;
+    margin: 0 0 0 50px;
+    font-family: 'Open Sans', sans-serif;
+/*     padding: 10px 0px 10px 0px;
+    background-color: aqua; */
 }
 
 .header2, .row1, .row2, .row3 {
     padding-left: 50px;
     padding-right: 20px;
-    font-family: Open Sans;
+/*     font-family: 'Open Sans', sans-serif; */
 }
 .qualities {
     display: inline;
 }
 
-.row1, .row2, .row3 {
+div.row1, div.row2, div.row3 {
     display: inline-block;
 }
 
 .row1 div, .row2 div, .row3 div {
-    display: inline-block;
     width: 28%;
     float: left;
 }
 
-div.second-col, div.third-col {
+.second-col, .third-col {
     padding-left: 10px;
 }
 
@@ -53,12 +55,11 @@ img {
     border-radius: 8px;
     font-size: .8rem;
     padding: 2px;
-    font-family: Open Sans;
-
+    font-family: 'Open Sans', sans-serif;
 }
 
 h3 {
     font-size: 1.1rem;
     margin: auto;
-    font-family: Oswald;
+    font-family: 'Oswald', sans-serif;
 }
