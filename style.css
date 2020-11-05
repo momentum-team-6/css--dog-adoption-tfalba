@@ -11,27 +11,20 @@ body {
     font-size: 1.2rem;
 }
 
-h1 {
+.header h1 {
     margin: 0 0 0 50px;
-    font-family: 'Open Sans', sans-serif;
-/*     padding: 10px 0px 10px 0px;
-    background-color: aqua; */
 }
 
-.header2, .row1, .row2, .row3 {
+.header2, .row {
     padding-left: 50px;
     padding-right: 20px;
-/*     font-family: 'Open Sans', sans-serif; */
-}
-.qualities {
-    display: inline;
 }
 
-div.row1, div.row2, div.row3 {
+.row {
     display: inline-block;
 }
 
-.row1 div, .row2 div, .row3 div {
+.col {
     width: 28%;
     float: left;
 }
@@ -46,20 +39,41 @@ div.row1, div.row2, div.row3 {
 
 img {
     width: 100%;
-    float: left;
-    padding-bottom: 5px;
 }
 
-.qualities {
-    background-color: #89DEEF;
-    border-radius: 8px;
-    font-size: .8rem;
-    padding: 2px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-h3 {
+.dog-name {
     font-size: 1.1rem;
     margin: auto;
     font-family: 'Oswald', sans-serif;
 }
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.qualities {
+    display: inline-block;
+    background-color: #89DEEF;
+    border-radius: 8px;
+    font-size: .7rem;
+    padding: 2px;
+    font-family: 'Open Sans', sans-serif;
+    overflow-wrap: unset;
+}
+
+/* SOME STARTS ON GETTING FOOTER TO WORK
+div.left-third div.center-third, div.right-third {
+    display: inline-block;
+
+}
+
+.left-third, .center-third, .right-third {
+    float: left;
+    width: 33vw;
+    height: 25vh;
+}
+
+.left-third img {
+    height: inherit;
+}*/
