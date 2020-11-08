@@ -37,6 +37,10 @@ body {
     width: 100%;
 }
 
+div.dog-card:hover img.dog-photo {
+    opacity: .25;
+}
+
 /*FORMATTING FOR DOG NAME HEADING*/
 .dog-name {
     font-size: 1rem;
@@ -61,16 +65,13 @@ ul {
 /*THIS STYLING HANDLES FOOTER SECTION. Added method of selecting n-th child*/
 
 .thirds-container {
-    height: 22vh;
-    width: 100vw;
+    height: 250px;
+    flex-basis: 100%;
     display: flex;
     padding-bottom: 20px;
 }
 
-div.thirds-container {
-    align-items: center;
-}
- .thirds::before {
+.thirds::before {
     content: "";
     position: absolute;
     top: 0px; right: 0px; bottom: 0px; left: 0px;
@@ -80,8 +81,8 @@ div.thirds-container {
 
 .thirds {
     display: flex;
-    flex-grow: 1;
-    width: 33vw;
+/*     flex-grow: 3;
+ */ width: 33vw;    /*Can't get to stay in thirds without this -- slightly off similar to the flexbox tricks article*/
     position: relative;
     background-size: cover;
     justify-content: space-evenly;
@@ -92,11 +93,9 @@ div.thirds-container {
 .thirds:nth-of-type(1) {
     background-image: url("starter_files/images/donate.jpg");
 }
-
 .thirds:nth-of-type(2) {
     background-image: url("starter_files/images/volunteer.jpg");
 }
-
 .thirds:nth-of-type(3) {
     background-image: url("starter_files/images/location.png");
 }
@@ -104,9 +103,10 @@ div.thirds-container {
 .footer-text {
     color: white;
     display: flex;
+    flex-grow: 1;
+    justify-content: center;
     position: relative;
     font-weight: normal;
     font-size: 2.7rem;
     font-family: 'Oswald', sans-serif;
-/*     padding-top: 75px;
- */}
+}
