@@ -65,7 +65,7 @@ ul {
 /*THIS STYLING HANDLES FOOTER SECTION. Added method of selecting n-th child*/
 
 .thirds-container {
-    height: 250px;
+    height: 300px;
     flex-basis: 100%;
     display: flex;
     padding-bottom: 20px;
@@ -81,13 +81,13 @@ ul {
 
 .thirds {
     display: flex;
-/*     flex-grow: 3;
- */ width: 33vw;    /*Can't get to stay in thirds without this -- slightly off similar to the flexbox tricks article*/
+    flex-grow: 3;
     position: relative;
     background-size: cover;
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
+    width: 100px;
 }
 
 .thirds:nth-of-type(1) {
