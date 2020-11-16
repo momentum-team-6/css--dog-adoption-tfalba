@@ -1,5 +1,4 @@
 /*Style Sheet for Dog Adoption Page*/
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -7,6 +6,25 @@
 body {
     margin: auto;
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+}
+.center {
+    display: flex;
+    flex-basis: 1000px;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+.left {
+    display: flex;
+    flex-basis: 100px;
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+.right {
+    display: flex;
+    flex-basis: 100px;
+    flex-grow: 2;
+    flex-shrink: 2;
 }
 .header {
     background-color: #004175;
@@ -14,101 +32,98 @@ body {
     padding: 30px 0px 30px 0px;
     font-size: 1.2rem;
 }
-
 .header h1 {
     margin: 0 0 0 50px;
 }
-
-.header2 {
-    padding: 25px 25px 25px 50px;
+.subheader {
+    padding: 25px 25px 10px 50px;
+}
+.subheader p {
+    padding: 25px 0 0 0;
 }
 
-.row {
-    display: inline-block;   
-    padding: 0 0 0 50px;
+.dogs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
 }
-
-.col {
-    width: 30%;
-    float: left;
+.dog-card {
+    width: 320px;
+    padding: 0 0 50px 10px;
 }
-
-.second-col, .third-col {
-    padding-left: 10px;
-}
-
-.row1, .row2 {
-    padding-bottom: 30px;
-}
-
 /*MAKES SURE EACH DOG PIC TAKES UP FULL WIDTH OF CONTAINER*/
-
 .dog-photo {
     width: 100%;
 }
 
-/*FORMATTING FOR DOG NAME HEADING*/
-
-.dog-name {
-    font-size: 1.2rem;
-    margin: auto;
-    font-family: 'Oswald', sans-serif;
+div.dog-card:hover img.dog-photo {
+    opacity: .25;
 }
 
+/*FORMATTING FOR DOG NAME HEADING*/
+.dog-name {
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+}
 /*THIS SECTION STYLES THE LIST QUALITIES OF EACH DOG*/
-
 ul {
     padding: 0;
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
 }
-
 .qualities {
-    display: inline-block;
+    display: flex;
     background-color: #89DEEF;
-    border-radius: 7px;
-    font-size: .7rem;
+    border-radius: 6px;
+    font-size: .8rem;
     padding: 1px;
     margin: 2px;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 /*THIS STYLING HANDLES FOOTER SECTION. Added method of selecting n-th child*/
 
-.third div {
-    float: left;
-    width: 33.3vw;
-    height: 18vh;
+.thirds-container {
+    height: 300px;
     display: flex;
-    flex-direction: row-reverse;
+    padding-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+.thirds {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    font-family: 'Oswald', sans-serif;
-    margin: 50px 0 50px 0;
-    background-size: cover;
-    position: relative;
+    height: 100%;
+    width: 400px;
 }
- .third div::before {
-    content: "";
-    position: absolute;
-    top: 0px; right: 0px; bottom: 0px; left: 0px;
-    background-color: rgb(131,134,235);
-    opacity: .7;
+
+.thirds:nth-of-type(1) {
+    background: linear-gradient(
+            rgba(166,169,240,.45),
+            rgba(166,169,240,.45)
+        ), url(starter_files/images/donate.jpg) top center / 400px 300px no-repeat;
 }
-.third div:nth-child(1) {
-    background-image: url("starter_files/images/donate.jpg");
+
+.thirds:nth-of-type(2) {
+    background:  linear-gradient(
+        rgba(166,169,240,.45),
+        rgba(166,169,240,.45)
+    ), url(starter_files/images/volunteer.jpg) top center / 400px 300px no-repeat;
 }
-.third div:nth-child(2) {
-    background-image: url("starter_files/images/volunteer.jpg");
+
+.thirds:nth-of-type(3) {
+    background:  linear-gradient(
+        rgba(166,169,240,.45),
+        rgba(166,169,240,.45)
+    ), url(starter_files/images/location.png) top center / 400px 300px no-repeat;
 }
-.third div:nth-child(3) {
-   background-image: url("starter_files/images/location.png");
-}
+
 .footer-text {
     color: white;
-    position: relative;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
     font-weight: normal;
+    font-size: 2.6rem;
+    font-family: 'Oswald', sans-serif;
 }
