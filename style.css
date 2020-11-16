@@ -6,6 +6,25 @@
 body {
     margin: auto;
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+}
+.center {
+    display: flex;
+    flex-basis: 1000px;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+.left {
+    display: flex;
+    flex-basis: 100px;
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+.right {
+    display: flex;
+    flex-basis: 100px;
+    flex-grow: 2;
+    flex-shrink: 2;
 }
 .header {
     background-color: #004175;
